@@ -1,0 +1,61 @@
+.body{
+    background-color: rgb(144, 0, 255);
+}
+
+
+
+
+.blue{
+    width: 10rem;
+    height: 10rem;
+    background-color: blue;
+    border-radius: 1rem;
+    border: none;
+
+}
+
+.blue:active{
+    transform: scale(1.2);
+  
+}
+
+
+.main{
+    display: grid;
+    gap: 2rem;
+    padding: 10rem;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+
+    
+}
+
+.text{
+    position: absolute;
+    font-size: 3rem;
+    
+
+}
+
+.text{
+    position: absolute;
+    font-size: 3rem;
+    top: 2rem;
+    
+
+}
+
+.button{
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    width: 15rem;
+    height: 5rem;
+    border-radius: 5rem;
+    background-color: cyan;
+}
+
