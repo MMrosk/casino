@@ -35,33 +35,25 @@ seven = false;
 aigth = false;
 nine = false;
 
-function plus(index){
-    var number = money.textContent;
-    number = parseInt(number)
-    money.textContent += index;
 
-}
-
-function minus(index){
-    var number = money.textContent;
-    number = parseInt(number)
-    money.textContent -= index;
-
-}
+var number = money.textContent;
+number = parseInt(number);
 
 
+var trails = trail.textContent;
+trails = parseInt(trails);
 
 function money1(){
-    var number = money.textContent;
-    number = parseInt(number)
+    
+    
     number -= 1000;
     money.textContent = number;
     console.log(number);
 }
 
 function trail1(){
-    var trails = trail.textContent;
-    trails = parseInt(trails)
+    
+    
     trails++;
     trail.textContent = trails;
     console.log(trails);
@@ -171,18 +163,40 @@ function action(){
   
 }
 
+function plus(index){
+    
+    
+    var pluss = number += index;
+    money.textContent = pluss;
+    console.log(pluss);
+
+}
+
+function minus(index){
+    
+    
+    var minuss = number -= index;
+    money.textContent = minuss;
+    console.log(minuss);
+
+}
+
+
 var clickCount;
 clickCount = 0;
 var mall = 0;
 
 function getMoney(index){
-    if(index === 2){
-        var cash = 150;
-        var plus2 = mall*0.2 * cash;
-        plus(plus2);
+    if(index === 1){
+      var cash = 150;
+      var plus2 = mall*0.3 * cash;
+      var plusRound = Math.round(plus2);
+      plus(plusRound);
+      console.log("green", plus2);
+
     }
     else if(index === 2){
-        minus(50000);
+        minus(900);
         console.log("rot");
     }
     else{
@@ -217,6 +231,7 @@ function click1(element){
             
             
             mall++;
+            console.log(mall)
             getMoney(1);
         }
     }
@@ -224,63 +239,91 @@ function click1(element){
     else if(element.id === "id2"){
         if(two === true){
             color(zwei);
+            getMoney(2);
         }
         else{
             color2(zwei)
+            mall++;
+            console.log(mall)
+            getMoney(1);
         }
     }
 
     else if(element.id === "id3"){
         if(three === true){
             color(drei);
+            getMoney(2);
         }
         else{
             color2(drei)
+            mall++;
+            console.log(mall)
+            getMoney(1);
         }
     }
 
     else if(element.id === "id4"){
         if(four === true){
             color(vier);
+            getMoney(2);
         }
         else{
             color2(vier)
+            mall++;
+            console.log(mall)
+            getMoney(1);
         }
     }
 
     else if(element.id === "id5"){
         if(five === true){
             color(funf);
+            getMoney(2);
         }
         else{
             color2(funf)
+            mall++;
+            console.log(mall)
+            getMoney(1);
         }
     }
 
     else if(element.id === "id6"){
         if(six === true){
             color(sechs);
+            getMoney(2);
         }
         else{
             color2(sechs)
+            mall++;
+            console.log(mall)
+            getMoney(1);
         }
     }
 
     else if(element.id === "id7"){
         if(seven === true){
             color(sieben);
+            getMoney(2);
         }
         else{
             color2(sieben)
+            mall++;
+            console.log(mall)
+            getMoney(1);
         }
     }
 
     else if(element.id === "id8"){
         if(aigth === true){
             color(acht);
+            getMoney(2);
         }
         else{
             color2(acht)
+            mall++;
+            console.log(mall)
+            getMoney(1);
         }
     }
 
@@ -289,9 +332,13 @@ function click1(element){
         if(nine === true){
             
             color(neun);
+            getMoney(2);
         }
         else{
             color2(neun)
+            mall++;
+            console.log(mall)
+            getMoney(1);
         }
     }
 
