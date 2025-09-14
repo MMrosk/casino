@@ -83,7 +83,7 @@ function colorBlue(){
     for(let i of main.children){
         i.style.backgroundColor = "blue"
     }
- 
+
 
 }
 
@@ -91,6 +91,11 @@ function colorBlue(){
 
 
 function action(){
+
+    clickCount = 0;
+    mall = 0;
+
+    document.querySelectorAll(".blue").forEach(btn => btn.disabled = false);
 
 
     trail1()
@@ -113,41 +118,41 @@ function action(){
     
     if(number == 0){
         one = true;
-        console.log(true);
+        
         
     }
     else if(number == 1){
         two = true;
-        console.log(true);
+        
     }
         else if(number == 2){
         three = true;
-        console.log(true);
+        
     }
         else if(number == 3){
         four = true;
-        console.log(true);
+        
     }
         else if(number == 4){
         five = true;
-        console.log(true);
+        
 
     }
         else if(number == 5){
         six = true;
-        console.log(true);    
+           
     }
         else if(number == 6){
         seven = true;
-        console.log(true);        
+                
     }
         else if(number == 7){
         aigth = true;
-        console.log(true);        
+                
     }
         else if(number == 8){
         nine = true;
-        console.log(true);
+        
         
         
         
@@ -155,7 +160,7 @@ function action(){
 
         else if(number == 9){
         ten = true;
-        console.log("nine");
+        
         
         
         
@@ -211,7 +216,16 @@ function getMoney(index){
 
 
 
+function mine(){
+    var input = prompt("do you want  continue playing (yes : no)")
+    if(input == yes){
+        action();
+    }
+    else if(input == no){
+        alert(money);
+    }
 
+}
 
 function click1(element){
 
@@ -220,7 +234,8 @@ function click1(element){
     
 
     if(element.id === "id1"){
-        console.log("ja")
+        
+        element.disabled = true;
         if(one === true){
             color(eins);
             getMoney(2);
@@ -237,6 +252,7 @@ function click1(element){
     }
 
     else if(element.id === "id2"){
+        element.disabled = true;
         if(two === true){
             color(zwei);
             getMoney(2);
@@ -250,6 +266,7 @@ function click1(element){
     }
 
     else if(element.id === "id3"){
+        element.disabled = true;
         if(three === true){
             color(drei);
             getMoney(2);
@@ -263,6 +280,7 @@ function click1(element){
     }
 
     else if(element.id === "id4"){
+        element.disabled = true;
         if(four === true){
             color(vier);
             getMoney(2);
@@ -276,6 +294,7 @@ function click1(element){
     }
 
     else if(element.id === "id5"){
+        element.disabled = true;
         if(five === true){
             color(funf);
             getMoney(2);
@@ -289,6 +308,7 @@ function click1(element){
     }
 
     else if(element.id === "id6"){
+        element.disabled = true;
         if(six === true){
             color(sechs);
             getMoney(2);
@@ -302,6 +322,7 @@ function click1(element){
     }
 
     else if(element.id === "id7"){
+        element.disabled = true;
         if(seven === true){
             color(sieben);
             getMoney(2);
@@ -315,6 +336,7 @@ function click1(element){
     }
 
     else if(element.id === "id8"){
+        element.disabled = true;
         if(aigth === true){
             color(acht);
             getMoney(2);
@@ -328,6 +350,7 @@ function click1(element){
     }
 
     else if(element.id === "id9"){
+        element.disabled = true;
         console.log("ja2")
         if(nine === true){
             
