@@ -6,8 +6,8 @@
 
 
 .blue{
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     background-color: blue;
     border-radius: 1rem;
     border: none;
@@ -22,9 +22,9 @@
 
 .main{
     display: grid;
-    gap: 2rem;
-    padding: 10rem;
-    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    padding: 7rem;
+    grid-template-columns: repeat(5, auto);
     justify-content: center;
 
     
