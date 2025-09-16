@@ -105,7 +105,7 @@ trails = parseInt(trails);
 function money1(){
     
     
-    number -= 1000;
+    number -= 1500;
     money.textContent = number;
     
 }
@@ -126,11 +126,11 @@ function random(){
 }
 
 function color(x){
-    x.style.backgroundColor = "red";
+    x.style.backgroundColor = "#E53935";
 }
 
 function color2(x){
-    x.style.backgroundColor = "green";
+    x.style.backgroundColor = "#00C853";
 }
 
 function colorBlue(){
@@ -170,7 +170,26 @@ function action(){
     six = false;
     seven = false;
     aigth = false;
-    nine = false;   
+    nine = false;
+    
+    one1 = false;
+    two1 = false;
+    three1 = false;
+    four1 = false;
+    five1 = false;
+    six1 = false;
+    seven1 = false;
+    aigth1 = false;
+    nine1 = false; 
+
+    one2 = false;
+    two2 = false;
+    three2 = false;
+    four2 = false;
+    five2 = false;
+    six2 = false;
+    seven2 = false;
+ 
 
     var number = random()
     console.log(number)
@@ -280,14 +299,14 @@ var mall = 0;
 function getMoney(index){
     if(index === 1){
       var cash = 150;
-      var plus2 = mall*0.3 * cash;
+      var plus2 = mall*0.18 * cash;
       var plusRound = Math.round(plus2);
       plus(plusRound);
       
 
     }
     else if(index === 2){
-        minus(900);
+        minus(2000);
         console.log("rot");
     }
     else{
@@ -302,6 +321,8 @@ function getMoney(index){
 
 
 function TimeOut(){
+    document.querySelectorAll(".blue").forEach(btn => btn.disabled = true);
+    setTimeout(action, 1500)
     console.log("du hs");
 
 

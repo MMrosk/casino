@@ -1,5 +1,5 @@
 .body{
-    background-color: rgb(144, 0, 255);
+    background-color: rgb(17, 18, 39);
 }
 
 
@@ -30,9 +30,14 @@
     
 }
 
-.text{
+.text1{
     position: absolute;
     font-size: 3rem;
+    top: 2rem;
+    color: RGB(0, 255, 100);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
     
 
 }
@@ -40,7 +45,9 @@
 .text{
     position: absolute;
     font-size: 3rem;
-    top: 2rem;
+    top: -3rem;
+    color: RGB(0, 255, 100);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 
 }
@@ -57,5 +64,35 @@
     height: 5rem;
     border-radius: 5rem;
     background-color: cyan;
+}
+
+.start{
+
+    width: 28rem;
+    height: 15rem;
+    border-radius: 6rem;
+    background-color: #0a17d2;
+    font-size: 3rem;
+    color: #0059ff;
+    border: none;
+
+}
+
+.start:hover{
+    background-color: #081087;
+}
+
+.start:active{
+    transform: scale(1.6);
+}
+
+.startDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 28rem;
+    height: 15rem;
 }
 
